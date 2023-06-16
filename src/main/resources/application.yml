@@ -36,3 +36,8 @@ feign:
       default: # 전역 처리
         connectTimeout: 5000 # 3-way handshake 시간 제한
         readTimeout: 5000
+
+kakao:
+  client:
+    id: 4277cd4af00c1beda1e15001cbcaa2d4 # REST API 키
+    secret: 96Dmy6FOQGc5SO0G6ClD4mSIbtdHfcXd # 보안 - Client Secret
