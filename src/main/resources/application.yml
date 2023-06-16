@@ -29,3 +29,10 @@ logging:
   level:
     org.hibernate.type: trace # 콘솔창에 조건에 바인딩되는 값 및 조회 결과 출력
     com.app: debug # todo 패키지 수정
+
+feign:
+  client:
+    config:
+      default: # 전역 처리
+        connectTimeout: 5000 # 3-way handshake 시간 제한
+        readTimeout: 5000
