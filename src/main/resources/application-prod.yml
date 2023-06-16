@@ -1,0 +1,6 @@
+spring:
+# todo 운영 데이터베이스 연결
+
+logging:
+  level:
+    com.app: info # todo 패키지 수정
