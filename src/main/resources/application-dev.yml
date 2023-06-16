@@ -1,0 +1,4 @@
+#server:
+#  port: 8081
+#  servlet:
+#    context-path: /dev # Edit Configuration 에서 수정을 해줘야 됨
