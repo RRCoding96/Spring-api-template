@@ -25,6 +25,10 @@ spring:
       max-file-size: 10MB # 파일 업로드 요청 시 하나의 파일 크기를 10MB 제한
       max-request-size: 100MB # 파일 업로드 요청 시 모든 파일 크기합을 100MB 제한
 
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
 logging:
   level:
     org.hibernate.type: trace # 콘솔창에 조건에 바인딩되는 값 및 조회 결과 출력
