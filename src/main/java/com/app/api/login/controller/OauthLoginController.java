@@ -35,7 +35,7 @@ public class OauthLoginController {
         AuthorizationHeaderUtils.validateAuthorization(authorizationHeader);
         oauthValidator.validateMemberType(oauthLoginRequestDto.getMemberType());
 
-        String accessToken = authorizationHeader.split(" ")[1];
+        String accessToken = authorizationHeader.split(" ")[1]; // kakao에서 받은 accesstoken
         OauthLoginDto.Response jwtTokenResponseDto = oauthLoginService
                 .oauthLogin(accessToken, MemberType.from(oauthLoginRequestDto.getMemberType()));
         return ResponseEntity.ok(jwtTokenResponseDto);

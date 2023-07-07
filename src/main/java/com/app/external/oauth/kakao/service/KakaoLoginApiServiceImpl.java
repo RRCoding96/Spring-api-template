@@ -22,7 +22,7 @@ public class KakaoLoginApiServiceImpl implements SocialLoginApiService {
     private final String CONTENT_TYPE = "application/x-www-form-urlencoded;charset=utf8";
 
     @Override
-    public OAuthAttributes getUserInfo(String accessToken) {
+    public OAuthAttributes getUserInfo(String accessToken) { // kakao에서 받은 accessToken
         KakaoUserInfoResponseDto kakaoUserInfoResponseDto = kakaoUserInfoClient.getKakaoUserInfo(CONTENT_TYPE,
                 GrantType.BEARER.getType() + " " + accessToken);
         KakaoUserInfoResponseDto.KakaoAccount kakaoAccount = kakaoUserInfoResponseDto.getKakaoAccount();
